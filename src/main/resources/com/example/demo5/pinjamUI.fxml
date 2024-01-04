@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo5.PinjamUI">
+    <children>
+        <AnchorPane prefHeight="558.0" prefWidth="600.0">
+            <children>
+                <TextField fx:id="txtCari" layoutX="191.0" layoutY="67.0" prefHeight="25.0" prefWidth="219.0" />
+                <Button fx:id="btnSearch" layoutX="423.0" layoutY="67.0" mnemonicParsing="false" onAction="#toSearch" prefHeight="25.0" prefWidth="25.0" />
+                <FontAwesomeIconView glyphName="SEARCH" layoutX="430.0" layoutY="84.0" />
+                <Text layoutX="50.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIK" />
+                <Text layoutX="150.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" />
+                <Text layoutX="50.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nama" />
+                <Text layoutX="150.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" />
+                <Text layoutX="50.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tenor" />
+                <Text layoutX="150.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" />
+                <Text layoutX="50.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pinjaman" />
+                <Text layoutX="150.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" />
+                <Text layoutX="50.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Margin" />
+                <Text layoutX="150.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" />
+                <Label fx:id="labelNIK" layoutX="166.0" layoutY="139.0" />
+                <Label fx:id="labelNama" layoutX="166.0" layoutY="189.0" />
+                <Text layoutX="160.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4%" />
+                <Button fx:id="btnPinjam" layoutX="373.0" layoutY="378.0" mnemonicParsing="false" onAction="#pinjam" prefHeight="50.0" prefWidth="100.0" text="Pinjam" />
+                <Button fx:id="btnHome" layoutX="486.0" layoutY="378.0" mnemonicParsing="false" onAction="#toHome" prefHeight="50.0" prefWidth="100.0" text="Home" />
+            <TextField fx:id="txtPinjaman" layoutX="177.0" layoutY="233.0" prefHeight="25.0" prefWidth="112.0" />
+            <Text layoutX="158.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rp" />
+            <TextField fx:id="txtTenor" layoutX="177.0" layoutY="283.0" prefHeight="25.0" prefWidth="31.0" />
+            <Text layoutX="218.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bulan" />
+            <Text layoutX="326.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pinjaman Maksimum" />
+            <Text layoutX="326.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gaji &lt; Rp. 4.999.999,- = Rp. 10.000.000,- " />
+            <Text layoutX="326.0" layoutY="261.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gaji &lt; Rp. 49.999.999,- = Rp. 100.000.000,- " />
+            <Text layoutX="326.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gaji &lt; Rp. 499.999.999,- = Rp. 1.000.000.000,- " />
+            </children></AnchorPane>
+    </children>
+</VBox>
